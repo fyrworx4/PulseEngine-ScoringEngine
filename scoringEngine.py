@@ -86,6 +86,36 @@ def runCheck():
                 except Exception as e:
                     print("[!] SSH poll failed, likely fault in parameters")
                     print("Detailed exception: " + str(e))
+            elif scoreObject["type"] == "dns":
+                try:
+                    result = pollDNS(scoreObject["host"])
+                    scoredServiceObject = {}
+                    scoredServiceObject["name"] = scoreObject["displayName"]
+                    scoredServiceObject["status"] = result
+                    teamServices.append(scoredServiceObject)
+                except Exception as e:
+                    print("[!] DNS poll failed, likely fault in parameters")
+                    print("Detailed exception: " + str(e))
+            elif scoreObject["type"] == "smtp":
+                try:
+                    result = pollSMTP(scoreObject["host"], scoreObject["sender"], scoreObject["receiver"])
+                    scoredServiceObject = {}
+                    scoredServiceObject["name"] = scoreObject["displayName"]
+                    scoredServiceObject["status"] = result
+                    teamServices.append(scoredServiceObject)
+                except Exception as e:
+                    print("[!] SMTP poll failed, likely fault in parameters")
+                    print("Detailed exception: " + str(e))
+            elif scoreObject["type"] == "rdp":
+                try:
+                    result = pollRDP(scoreObject["host"], scoreObject["sender"], scoreObject["receiver"])
+                    scoredServiceObject = {}
+                    scoredServiceObject["name"] = scoreObject["displayName"]
+                    scoredServiceObject["status"] = result
+                    teamServices.append(scoredServiceObject)
+                except Exception as e:
+                    print("[!] RDP poll failed, likely fault in parameters")
+                    print("Detailed exception: " + str(e))
             else:
                 print("Unknown poll type, service was skipped")
 
