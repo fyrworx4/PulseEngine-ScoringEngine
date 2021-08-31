@@ -3,6 +3,8 @@
 PulseEngine Scoring Engine
 
 @author: jimmy
+
+8/31 - edited by fyr
 """
 
 import json
@@ -10,7 +12,7 @@ import time
 import requests
 import pollers
 
-from pollers import pollPort, pollHTTP, pollSSH, pollFTP
+from pollers import pollPort, pollHTTP, pollSSH, pollFTP, pollDNS, pollSMTP, pollRDP
 
 compId = None
 apikey = None
