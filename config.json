@@ -8,7 +8,7 @@
           "type": "ftp",
           "host": "172.16.100.25",
           "port": "21",
-          "users": "Administrator:Orbitalweapons_1234",
+          "users": ["Administrator:Orbitalweapons_1234"],
           "displayName": "sol-ftp"
         },
         {
