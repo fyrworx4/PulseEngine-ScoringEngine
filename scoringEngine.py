@@ -110,7 +110,7 @@ def runCheck():
                     print("Detailed exception: " + str(e))
             elif scoreObject["type"] == "rdp":
                 try:
-                    result = pollRDP(scoreObject["host"], scoreObject["sender"], scoreObject["receiver"])
+                    result = pollRDP(scoreObject["host"], scoreObject["port"], scoreObject["user"])
                     scoredServiceObject = {}
                     scoredServiceObject["name"] = scoreObject["displayName"]
                     scoredServiceObject["status"] = result
