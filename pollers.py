@@ -131,14 +131,21 @@ Description: Will verify that the RDP service is running on the specific port by
 Parameters: ip - ip address to poll, port - port number to poll, user - user to connect with
 """
 
-def pollRDP(ip, port, user):
-    username = user.split(":")[0]
-    password = user.split(":")[1]
-    cmd = ['xfreerdp', '--ignore-certificate', '--authonly', '-u', username, '-p', password, f'{ip}:{port}']
-    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    output = proc.communicate()
+def pollRDP(ip, port, users):
+    rdp_list = []
+    for user in users:
+        username = user.split(":")[0]
+        password = user.split(":")[1]
+        cmd = ['xfreerdp', '--ignore-certificate', '--authonly', '-u', username, '-p', password, f'{ip}:{port}']
+        proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        output = proc.communicate()
 
-    if (str(output)[-5]) == "0":
-        return True
-    else:
+        if (str(output)[-5]) == "0":
+            rdp_list.append(0)
+        else:
+            rdp_list.append(1)
+            
+    if 1 in rdp_list:
         return False
+    else:
+        return True
