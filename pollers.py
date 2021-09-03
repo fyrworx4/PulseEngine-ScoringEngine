@@ -88,13 +88,9 @@ Records: a dictionary of FQDNs and IP addresses of all hosts on the network
 """
 
 records = {
-    "globalterminal.goldenrod.city": "['192.168.220.21']",
-    "billshouse.goldenrod.city": "['192.168.220.24']",
-    "gym.goldenrod.city": "['192.168.220.22']",
-    "pcbox.goldenrod.city": "['192.168.220.23']",
-    "pokecom.goldenrod.city": "['192.168.220.14']",
-    "pokemart.goldenrod.city": "['192.168.220.17']",
-    "pokemon-center.goldenrod.city": "['192.168.220.16']"
+    "sol.orbitalweapons.eu": "['192.168.200.25']",
+    "terra.orbitalweapons.eu": "['192.168.200.18']",
+    "luna.orbitalweapons.eu": "['192.168.200.4']"
 }
 
 key_list = list(records)
