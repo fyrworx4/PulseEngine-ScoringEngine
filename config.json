@@ -1,0 +1,42 @@
+{
+  "compId": "6a5f9948-5b41-4e73-b9ee-5f0d35dbf388",
+  "apikey": "427987ba-88bd-466a-8636-1ec373408c6d",
+  "teams": [{
+      "teamname": "team_dev",
+      "scoredObjects": [
+        {
+          "type": "ftp",
+          "host": "172.16.100.25",
+          "port": "21",
+          "users": "Administrator:Orbitalweapons_1234",
+          "displayName": "sol-ftp"
+        },
+        {
+          "type": "dns",
+          "host": "172.16.100.25",
+          "port": "53",
+          "displayName": "sol-dns"
+        },
+        {
+          "type": "ssh",
+          "host": "172.16.100.18",
+          "port": "22",
+          "users": "longwang:Orbitalweapons_1234",
+          "displayName": "terra-ssh"
+        },
+        {
+          "type": "http",
+          "host": "172.16.100.18",
+          "port": "80",
+          "displayName": "terra-http"
+        },
+        {
+          "type": "rdp",
+          "host": "172.16.100.4",
+          "port": "3389",
+          "user": "saulsolper:Orbitalweapons_1234",
+          "displayName": "luna-rdp"
+        }
+      ]
+    }]
+}
