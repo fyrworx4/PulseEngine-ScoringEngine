@@ -32,7 +32,7 @@ def loadConfig():
             print("[!] Failed to load config")
 
 def sendStatus(teamName, teamServices):
-    r = requests.post('https://ccdcscoring.jimmyli.us/api/competitions/update', json={
+    r = requests.post('https://scoring.oneoneone.one/api/competitions/update', json={
         "compId": compId,
         "apikey": apikey,
         "teamname": teamName,
