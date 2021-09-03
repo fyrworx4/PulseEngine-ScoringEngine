@@ -34,7 +34,7 @@
           "type": "rdp",
           "host": "172.16.100.4",
           "port": "3389",
-          "user": "saulsolper:Orbitalweapons_1234",
+          "users": ["saulsolper:Orbitalweapons_1234"],
           "displayName": "luna-rdp"
         }
       ]
