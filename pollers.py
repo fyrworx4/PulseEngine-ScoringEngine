@@ -102,7 +102,7 @@ def pollDNS(dnsServer):
     print("DNS")
     try:
         dns_query = Nslookup(dns_servers=[dnsServer])
-        rand = random.randint(0,6)
+        rand = random.randint(0,2)
         ips_record = dns_query.dns_lookup(key_list[rand])
 
         if ips_record.answer == []:
