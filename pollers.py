@@ -99,7 +99,6 @@ records = {
 key_list = list(records)
 
 def pollDNS(dnsServer):
-    print("DNS")
     try:
         dns_query = Nslookup(dns_servers=[dnsServer])
         rand = random.randint(0,2)
