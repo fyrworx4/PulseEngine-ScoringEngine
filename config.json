@@ -28,6 +28,7 @@
           "type": "http",
           "host": "172.16.100.18",
           "port": "80",
+          "url": "http://172.16.100.18/orbital-railgun/",
           "md5": "",
           "displayName": "terra-http"
         },
