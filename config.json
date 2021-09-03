@@ -21,7 +21,7 @@
           "type": "ssh",
           "host": "172.16.100.18",
           "port": "22",
-          "users": "longwang:Orbitalweapons_1234",
+          "users": ["longwang:Orbitalweapons_1234"],
           "displayName": "terra-ssh"
         },
         {
