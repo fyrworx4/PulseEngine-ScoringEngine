@@ -54,7 +54,8 @@ def pollSSH(ip, port, users):
                 continue
             username = user.split(":")[0]
             password = user.split(":")[1]
-            if(subprocess.call("sshpass -p \"" + password + "\" ssh -q -o \"UserKnownHostsFile=/dev/null\" -o \"StrictHostKeyChecking=no\" " +  username + "@" + ip + " -p " + port + " exit", shell=True) != 0):
+            pollCommand = "sshpass -p \"" + password + "\" ssh -q -o \"UserKnownHostsFile=/dev/null\" -o \"StrictHostKeyChecking=no\" " + username + "@" + ip + " -p " + port + " exit"
+            if(subprocess.call(pollCommand, shell=True) != 0):
                     return False
         return True
     except:
