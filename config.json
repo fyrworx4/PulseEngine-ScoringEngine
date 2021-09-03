@@ -1,6 +1,6 @@
 {
-  "compId": "6a5f9948-5b41-4e73-b9ee-5f0d35dbf388",
-  "apikey": "427987ba-88bd-466a-8636-1ec373408c6d",
+  "compId": "d99ea940-eda9-47df-ab5b-de3f0995e2cd",
+  "apikey": "9b04f1fa-66a5-4f1d-b9eb-7ebba7e26bea",
   "teams": [{
       "teamname": "team_dev",
       "scoredObjects": [
@@ -26,7 +26,7 @@
         {
           "type": "http",
           "host": "http://172.16.100.18/orbital-railgun/",
-          "md5": "932da5a430ff6db1bc48425b567d56fa",
+          "md5": "5caa1709991fcd289b427085f674d90e",
           "displayName": "terra-http"
         },
         {
@@ -35,6 +35,12 @@
           "port": "3389",
           "users": ["saulsolper:Orbitalweapons_1234"],
           "displayName": "luna-rdp"
+        },
+        {
+          "type": "http",
+          "host": "http://172.16.100.4/gym/",
+          "md5": "86cc35dace86c44ae7dbeece7f31f6cb",
+          "displayName": "luna-http"
         }
       ]
     }]
