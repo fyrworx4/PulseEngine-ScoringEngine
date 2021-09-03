@@ -8,7 +8,7 @@
           "type": "ftp",
           "host": "172.16.100.25",
           "port": "21",
-          "users": "Administrator:Orbitalweapons_1234",
+          "users": ["Administrator:Orbitalweapons_1234"],
           "displayName": "sol-ftp"
         },
         {
@@ -28,13 +28,14 @@
           "type": "http",
           "host": "172.16.100.18",
           "port": "80",
+          "md5": "",
           "displayName": "terra-http"
         },
         {
           "type": "rdp",
           "host": "172.16.100.4",
           "port": "3389",
-          "user": "saulsolper:Orbitalweapons_1234",
+          "users": ["saulsolper:Orbitalweapons_1234"],
           "displayName": "luna-rdp"
         }
       ]
