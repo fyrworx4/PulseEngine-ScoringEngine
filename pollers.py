@@ -76,7 +76,9 @@ def pollFTP(ip, port, users):
             if ":" not in user:
                 continue
             username = user.split(":")[0]
+            print(username)
             password = user.split(":")[1]
+            print(password)
         ftp.login(username, password)
         ftp.close()
         return True
