@@ -14,7 +14,6 @@
         {
           "type": "dns",
           "host": "172.16.100.25",
-          "port": "53",
           "displayName": "sol-dns"
         },
         {
