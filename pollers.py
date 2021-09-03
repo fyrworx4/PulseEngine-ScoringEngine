@@ -70,13 +70,15 @@ Parameters: ip - ip address to poll, port - port number to poll, users - Array o
 def pollFTP(ip, port, users):
     try:
         ftp = FTP()
-        ftp.connect(ip, int(port), timeout=3)
+        ftp.connect(ip, int(port))
+        ftp.set_pasv(False)
         for user in users:
             if ":" not in user:
                 continue
             username = user.split(":")[0]
             password = user.split(":")[1]
-            ftp.login(username, password)
+        ftp.login(username, password)
+        ftp.close()
         return True
     except:
         return False
@@ -144,7 +146,7 @@ def pollRDP(ip, port, users):
             rdp_list.append(0)
         else:
             rdp_list.append(1)
-            
+
     if 1 in rdp_list:
         return False
     else:
