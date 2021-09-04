@@ -310,7 +310,7 @@
           "type": "ftp",
           "host": "172.16.7.25",
           "port": "21",
-          "users": ["Administrator:Orbitalweapons_1234"],
+          "users": ["Administrator:123OWswift321!"],
           "displayName": "sol-ftp"
         },
         {
@@ -335,7 +335,7 @@
           "type": "rdp",
           "host": "172.16.7.4",
           "port": "3389",
-          "users": ["saulsolper:Orbitalweapons_1234"],
+          "users": ["saulsolper:123OWswift321!"],
           "displayName": "luna-rdp"
         },
         {
