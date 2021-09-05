@@ -378,7 +378,7 @@
             "type": "rdp",
             "host": "172.16.8.4",
             "port": "3389",
-            "users": ["saulsolper:Orbitalweapons_1234"],
+            "users": ["saulsolper:ChinaNumber1"],
             "displayName": "luna-rdp"
           },
           {
@@ -494,7 +494,7 @@
             "type": "ssh",
             "host": "172.16.11.18",
             "port": "22",
-            "users": ["longwang:Orbitalweapons_1234"],
+            "users": ["longwang:SecurePasswordThatIsntOnRockyou"],
             "displayName": "terra-ssh"
           },
           {
