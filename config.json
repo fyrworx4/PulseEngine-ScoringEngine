@@ -120,7 +120,7 @@
             "type": "rdp",
             "host": "172.16.2.4",
             "port": "3389",
-            "users": ["saulsolper:TlqkftoRL1!"],
+            "users": ["saulsolper:TlqkftoRl1!"],
             "displayName": "luna-rdp"
           },
           {
