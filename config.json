@@ -525,7 +525,7 @@
             "type": "ftp",
             "host": "172.16.12.25",
             "port": "21",
-            "users": ["Administrator:WegWegWeg123!@#"],
+            "users": ["Administrator:WefWefWef123!@#"],
             "displayName": "sol-ftp"
           },
           {
