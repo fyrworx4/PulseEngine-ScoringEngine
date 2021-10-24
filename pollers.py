@@ -154,12 +154,12 @@ def pollRDP(ip, port, users):
         return True
 
 """
-Name: pollmySQL
+Name: pollMySQL
 Description: Will verify that the mySQL service is running on the specific port by checking if authentication to mySQL service is successful, and database matches hard-coded hash
 Parameters: ip - ip address to poll, port - port number to poll, users - list of users to connect with, databaseName - name of database to use, tableName - name of table to use, tableHash - hash of table
 """
 
-def pollmySQL(ip, port, users, databaseName, tableName, tableHash):
+def pollMySQL(ip, port, users, databaseName, tableName, tableHash):
     try:
         for user in users:
             if ":" not in user:

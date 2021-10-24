@@ -118,6 +118,16 @@ def runCheck():
                 except Exception as e:
                     print("[!] RDP poll failed, likely fault in parameters")
                     print("Detailed exception: " + str(e))
+            elif scoreObject["type"] == "mysql":
+                try:
+                    result = pollMySQL(scoreObject["host"], scoreObject["port"], scoreObject["users"], scoreObject["databaseName"], scoreObject["tableName"], scoreObject["md5"])
+                    scoredServiceObject = {}
+                    scoredServiceObject["name"] = scoreObject["displayName"]
+                    scoredServiceObject["status"] = result
+                    teamServices.append(scoredServiceObject)
+                except Exception as e:
+                    print("[!] MySQL poll failed, likely fault in parameters")
+                    print("Detailed exception: " + str(e))
             else:
                 print("Unknown poll type, service was skipped")
 
