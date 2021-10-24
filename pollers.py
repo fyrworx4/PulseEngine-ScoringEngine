@@ -165,12 +165,12 @@ def pollMySQL(ip, port, users, databaseName, tableName, tableHash):
             if ":" not in user:
                 continue
             username = user.split(":")[0]
-            password = user.split(":")[1]
+            pw= user.split(":")[1]
 
         mydb = mysql.connector.connect(
             host = ip,
             user = username,
-            password = password,
+            password = pw,
             database = databaseName
         )
 

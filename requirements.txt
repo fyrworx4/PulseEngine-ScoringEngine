@@ -1,0 +1,5 @@
+dnspython
+sockets
+requests
+path.py
+mysql-connector-python

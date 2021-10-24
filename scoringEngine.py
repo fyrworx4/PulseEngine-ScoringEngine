@@ -12,7 +12,7 @@ import time
 import requests
 import pollers
 
-from pollers import pollPort, pollHTTP, pollSSH, pollFTP, pollDNS, pollSMTP, pollRDP
+from pollers import pollPort, pollHTTP, pollSSH, pollFTP, pollDNS, pollSMTP, pollRDP, pollMySQL
 
 compId = None
 apikey = None
