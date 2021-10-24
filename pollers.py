@@ -10,6 +10,7 @@ import random
 from nslookup import Nslookup
 import smtplib
 import re
+import mysql.connector
 
 """
 Name: pollPort
@@ -151,3 +152,38 @@ def pollRDP(ip, port, users):
         return False
     else:
         return True
+
+"""
+Name: pollmySQL
+Description: Will verify that the mySQL service is running on the specific port by checking if authentication to mySQL service is successful, and database matches hard-coded hash
+Parameters: ip - ip address to poll, port - port number to poll, users - list of users to connect with, databaseName - name of database to use, tableName - name of table to use, tableHash - hash of table
+"""
+
+def pollmySQL(ip, port, users, databaseName, tableName, tableHash):
+    try:
+        for user in users:
+            if ":" not in user:
+                continue
+            username = user.split(":")[0]
+            password = user.split(":")[1]
+
+        mydb = mysql.connector.connect(
+            host = ip,
+            user = username,
+            password = password,
+            database = databaseName
+        )
+
+        mycursor = mydb.cursor()
+        mycursor.execute("SELECT * FROM " + tableName)
+        output = []
+        for x in mycursor:
+            output.append(x)
+        output = str(output).encode("utf-8")
+        
+        if(hashlib.md5(output).hexdigest() == tableHash):
+            return True
+        else:
+            return False
+    except:
+        return False
