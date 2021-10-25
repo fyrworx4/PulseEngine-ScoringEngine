@@ -3,45 +3,59 @@
     "apikey": "0b91d056-cbaf-4a6e-ab26-a90ec708ac8e",
     "teams": [
       {
-        "teamname": "Team 00",
+        "teamname": "Team Orbital",
         "scoredObjects": [
           {
-            "type": "ftp",
+            "type": "port",
             "host": "172.16.100.25",
-            "port": "21",
-            "users": ["Administrator:Orbitalweapons_1234"],
-            "displayName": "sol-ftp"
+            "port": "80",
+            "displayName": "orbital-port"
           },
           {
-            "type": "dns",
-            "host": "172.16.100.25",
-            "displayName": "sol-dns"
+            "type": "http",
+            "host": "http://172.16.100.18/orbital-railgun/",
+            "md5": "9c2316f83db6c9ad6e307b3b43484400",
+            "displayName": "orbital-http"
           },
           {
             "type": "ssh",
             "host": "172.16.100.18",
             "port": "22",
             "users": ["longwang:Orbitalweapons_1234"],
-            "displayName": "terra-ssh"
+            "displayName": "orbital-ssh"
           },
           {
-            "type": "http",
-            "host": "http://172.16.100.18/orbital-railgun/",
-            "md5": "9c2316f83db6c9ad6e307b3b43484400",
-            "displayName": "terra-http"
+            "type": "ftp",
+            "host": "172.16.100.25",
+            "port": "21",
+            "users": ["Administrator:Orbitalweapons_1234"],
+            "directory": "Files/",
+            "file": "weapons_of_mass_destruction.zip",
+            "size": 32,
+            "displayName": "orbital-ftp"
+          },
+          {
+            "type": "dns",
+            "host": "172.16.100.25",
+            "displayName": "orbital-dns"
           },
           {
             "type": "rdp",
             "host": "172.16.100.4",
             "port": "3389",
             "users": ["saulsolper:Orbitalweapons_1234"],
-            "displayName": "luna-rdp"
+            "displayName": "orbital-rdp"
           },
           {
-            "type": "http",
-            "host": "http://172.16.100.4/gym/",
+            "type": "mysql",
+            "host": "172.16.100.4",
+            "users": ["saulsolper:Orbitalweapons_1234"],
+            "databaseName": "Weapons",
+            "tableName": "AR-15",
             "md5": "86cc35dace86c44ae7dbeece7f31f6cb",
-            "displayName": "luna-http"
+            "displayName": "orbital-mysql"
+          },
+          {
           }
         ]
       }

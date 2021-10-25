@@ -64,11 +64,11 @@ def pollSSH(ip, port, users):
 
 """
 Name: pollFTP
-Description: Will verify that the FTP service is running on the specific port
-Parameters: ip - ip address to poll, port - port number to poll, users - Array of strings of format "username:password" to verify are valid
+Description: Will verify that the FTP service is running on the specific port by logging in and checking the size of a particular file and comparing the size with a hard-coded value stored in the scoring engine.
+Parameters: ip - ip address to poll, port - port number to poll, users - Array of strings of format "username:password" to verify are valid, directory - directory where file is stored, file - file to check, size - size of file
 """
 
-def pollFTP(ip, port, users):
+def pollFTP(ip, port, users, directory, file, size):
     try:
         ftp = FTP()
         ftp.connect(ip, int(port))
@@ -79,8 +79,12 @@ def pollFTP(ip, port, users):
             username = user.split(":")[0]
             password = user.split(":")[1]
         ftp.login(username, password)
+        ftp.cwd(str(directory))
+        filename = str(file)
+        if(ftp.size(filename) == int(size)):
+            return True
         ftp.close()
-        return True
+        return False
     except:
         return False
 
