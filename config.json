@@ -1,49 +1,23 @@
 {
-    "compId": "46c87515-88f6-4ef2-8752-0df6add64d70",
-    "apikey": "0b91d056-cbaf-4a6e-ab26-a90ec708ac8e",
-    "teams": [
-      {
-        "teamname": "Team 00",
-        "scoredObjects": [
-          {
-            "type": "ftp",
-            "host": "172.16.100.25",
-            "port": "21",
-            "users": ["Administrator:Orbitalweapons_1234"],
-            "displayName": "sol-ftp"
-          },
-          {
-            "type": "dns",
-            "host": "172.16.100.25",
-            "displayName": "sol-dns"
-          },
-          {
-            "type": "ssh",
-            "host": "172.16.100.18",
-            "port": "22",
-            "users": ["longwang:Orbitalweapons_1234"],
-            "displayName": "terra-ssh"
-          },
-          {
-            "type": "http",
-            "host": "http://172.16.100.18/orbital-railgun/",
-            "md5": "9c2316f83db6c9ad6e307b3b43484400",
-            "displayName": "terra-http"
-          },
-          {
-            "type": "rdp",
-            "host": "172.16.100.4",
-            "port": "3389",
-            "users": ["saulsolper:Orbitalweapons_1234"],
-            "displayName": "luna-rdp"
-          },
-          {
-            "type": "http",
-            "host": "http://172.16.100.4/gym/",
-            "md5": "86cc35dace86c44ae7dbeece7f31f6cb",
-            "displayName": "luna-http"
-          }
-        ]
-      }
-    ]
-  }
+  "compId": "e75e4d61-dd8c-4c8a-aa3c-3d9feea49891",
+  "apikey": "0fa76531-cfaf-4836-990e-377cc68ea90e",
+  "teams": [
+    {
+      "teamname": "Team 00",
+      "scoredObjects": [
+        {
+          "type": "dns",
+          "host": "172.16.100.235",
+          "displayName": "engines-dns"
+        },
+        {
+          "type": "ssh",
+          "host": "172.16.100.235",
+          "port": "22",
+          "users": ["criror:iL0v3SkyL@nt3rn"],
+          "displayName": "engines-ssh"
+        }
+      ]
+    }
+  ]
+}

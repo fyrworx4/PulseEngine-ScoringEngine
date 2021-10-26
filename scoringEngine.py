@@ -130,7 +130,7 @@ def runCheck():
                     print("Detailed exception: " + str(e))
             elif scoreObject["type"] == "irc":
                 try:
-                    result = pollMySQL(scoreObject["host"], scoreObject["port"], scoreObject["user"], scoreObject["message"])
+                    result = pollIRC(scoreObject["host"], scoreObject["port"], scoreObject["user"], scoreObject["channel"], scoreObject["message"])
                     scoredServiceObject = {}
                     scoredServiceObject["name"] = scoreObject["displayName"]
                     scoredServiceObject["status"] = result
