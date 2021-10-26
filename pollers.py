@@ -11,6 +11,7 @@ from nslookup import Nslookup
 import smtplib
 import re
 import mysql.connector
+import time
 
 """
 Name: pollPort
@@ -96,9 +97,7 @@ Records: a dictionary of FQDNs and IP addresses of all hosts on the network
 """
 
 records = {
-    "sol.orbitalweapons.eu": "['192.168.200.25']",
-    "terra.orbitalweapons.eu": "['192.168.200.18']",
-    "luna.orbitalweapons.eu": "['192.168.200.4']"
+    "engines.skylantern.com": "['192.168.200.235']"
 }
 
 key_list = list(records)
@@ -106,7 +105,7 @@ key_list = list(records)
 def pollDNS(dnsServer):
     try:
         dns_query = Nslookup(dns_servers=[dnsServer])
-        rand = random.randint(0,len(records) - 1)
+        rand = random.randint(0,0)
         ips_record = dns_query.dns_lookup(key_list[rand])
 
         if ips_record.answer == []:
@@ -189,5 +188,35 @@ def pollMySQL(ip, port, users, databaseName, tableName, tableHash):
             return True
         else:
             return False
+    except:
+        return False
+
+"""
+Name: pollIRC
+Description: Will verify that the IRC service is running on the specific port by checking if logon to the IRC service is successful, and a test message is able to be sent
+Parameters: ip - ip address to poll, port - port number to poll, user - nickname to send messages as, channel - the channel to send messages in, message - the test message to send
+
+"""
+def pollIRC(ip, port, username, channel, message):
+    try:
+        irc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        irc.connect((ip, port))
+        irc.send(bytes("USER " + username + " " + username +" " + username + " :c3p0\n", "UTF-8"))
+        irc.send(bytes("NICK " + username + "\n", "UTF-8"))
+        irc.send(bytes("NICKSERV IDENTIFY " + "" + " " + "" + "\n", "UTF-8"))
+        time.sleep(5)
+        irc.send(bytes("JOIN " + channel + "\n", "UTF-8"))
+
+        while True:
+            time.sleep(1)
+            resp = irc.recv(2040).decode("UTF-8")
+            if resp.find('PING') != -1:
+                irc.send(bytes('PONG ' + resp.split()[1] + '\r\n', "UTF-8"))
+            text = resp
+            if "PING :" in text:
+                irc.send(bytes("PONG :"+text.split('PING')[1].split(':')[1]+"\n","UTF-8"))
+            if "End of /MOTD" in text:
+                irc.send(bytes("PRIVMSG "+channel+" "+message+"\n", "UTF-8"))
+                return True
     except:
         return False
