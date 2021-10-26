@@ -12,7 +12,7 @@ import time
 import requests
 import pollers
 
-from pollers import pollPort, pollHTTP, pollSSH, pollFTP, pollDNS, pollSMTP, pollRDP, pollMySQL
+from pollers import pollPort, pollHTTP, pollSSH, pollFTP, pollDNS, pollSMTP, pollRDP, pollMySQL, pollIRC
 
 compId = None
 apikey = None
@@ -127,6 +127,16 @@ def runCheck():
                     teamServices.append(scoredServiceObject)
                 except Exception as e:
                     print("[!] MySQL poll failed, likely fault in parameters")
+                    print("Detailed exception: " + str(e))
+            elif scoreObject["type"] == "irc":
+                try:
+                    result = pollMySQL(scoreObject["host"], scoreObject["port"], scoreObject["user"], scoreObject["message"])
+                    scoredServiceObject = {}
+                    scoredServiceObject["name"] = scoreObject["displayName"]
+                    scoredServiceObject["status"] = result
+                    teamServices.append(scoredServiceObject)
+                except Exception as e:
+                    print("[!] IRC poll failed, likely fault in parameters")
                     print("Detailed exception: " + str(e))
             else:
                 print("Unknown poll type, service was skipped")
