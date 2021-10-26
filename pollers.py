@@ -16,7 +16,9 @@ import time
 """
 Name: pollPort
 Description: Will poll for a specific port and see if it is online
-Parameters: ip - ip address to poll, port - port number
+Parameters: 
+@ip - ip address to poll
+@port - port number
 """
 
 def pollPort(ip, port):
@@ -31,7 +33,9 @@ def pollPort(ip, port):
 """
 Name: pollHTTP
 Description: Will query a url and verify that it is reachable and the md5 content of the page is what is expected
-Parameters: url - complete url of the page to query (ex. https://192.168.0.1/login.html), pageHash - expected md5 hash of the page
+Parameters: 
+@url - complete url of the page to query (ex. https://192.168.0.1/login.html)
+@pageHash - expected md5 hash of the page
 """
 
 def pollHTTP(url, pageHash):
@@ -46,7 +50,10 @@ def pollHTTP(url, pageHash):
 """
 Name: pollSSH
 Description: Will verify that the SSH service is running on the specific port
-Parameters: ip - ip address to poll, port - port number to poll, users - Array of strings of format "username:password" to verify are valid
+Parameters: 
+@ip - ip address to poll 
+@port - port number to poll 
+@users - Array of strings of format "username:password" to verify are valid
 """
 
 def pollSSH(ip, port, users):
@@ -66,7 +73,13 @@ def pollSSH(ip, port, users):
 """
 Name: pollFTP
 Description: Will verify that the FTP service is running on the specific port by logging in and checking the size of a particular file and comparing the size with a hard-coded value stored in the scoring engine.
-Parameters: ip - ip address to poll, port - port number to poll, users - Array of strings of format "username:password" to verify are valid, directory - directory where file is stored, file - file to check, size - size of file
+Parameters: 
+@ip - ip address to poll 
+@port - port number to poll 
+@users - Array of strings of format "username:password" to verify are valid
+@directory - directory where file is stored
+@file - file to check 
+@size - size of file
 """
 
 def pollFTP(ip, port, users, directory, file, size):
@@ -92,7 +105,8 @@ def pollFTP(ip, port, users, directory, file, size):
 """
 Name: pollDNS
 Description: Will verify that the DNS service is running on the specific port
-Parameters: dnsServer - the server to perform DNS query from
+Parameters: 
+@dnsServer - the server to perform DNS query from
 Records: a dictionary of FQDNs and IP addresses of all hosts on the network
 """
 
@@ -120,7 +134,10 @@ def pollDNS(dnsServer):
 """
 Name: pollSMTP
 Description: Will verify that the SMTP service is running on the specific port
-Parameters: ip - ip address to poll, from_addr - mail address to send from, to_addr - mail address to send to
+Parameters: 
+@ip - ip address to poll 
+@from_addr - mail address to send from 
+@to_addr - mail address to send to
 """
 
 def pollSMTP(ip, from_addr, to_addr):
@@ -134,7 +151,10 @@ def pollSMTP(ip, from_addr, to_addr):
 """
 Name: pollRDP
 Description: Will verify that the RDP service is running on the specific port by checking if authentication to RDP service is successful
-Parameters: ip - ip address to poll, port - port number to poll, user - user to connect with
+Parameters: 
+@ip - ip address to poll 
+@port - port number to poll 
+@user - user to connect with
 """
 
 def pollRDP(ip, port, users):
@@ -159,7 +179,13 @@ def pollRDP(ip, port, users):
 """
 Name: pollMySQL
 Description: Will verify that the mySQL service is running on the specific port by checking if authentication to mySQL service is successful, and database matches hard-coded hash
-Parameters: ip - ip address to poll, port - port number to poll, users - list of users to connect with, databaseName - name of database to use, tableName - name of table to use, tableHash - hash of table
+Parameters: 
+@ip - ip address to poll 
+@port - port number to poll 
+@users - list of users to connect with 
+@databaseName - name of database to use 
+@tableName - name of table to use 
+@tableHash - hash of table
 """
 
 def pollMySQL(ip, port, users, databaseName, tableName, tableHash):
@@ -194,8 +220,12 @@ def pollMySQL(ip, port, users, databaseName, tableName, tableHash):
 """
 Name: pollIRC
 Description: Will verify that the IRC service is running on the specific port by checking if logon to the IRC service is successful, and a test message is able to be sent
-Parameters: ip - ip address to poll, port - port number to poll, user - nickname to send messages as, channel - the channel to send messages in, message - the test message to send
-
+Parameters: 
+@ip - ip address to poll 
+@port - port number to poll 
+@user - nickname to send messages as 
+@channel - the channel to send messages in 
+@message - the test message to send
 """
 def pollIRC(ip, port, username, channel, message):
     try:
