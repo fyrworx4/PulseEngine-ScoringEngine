@@ -26,7 +26,7 @@
         {
           "type": "irc",
           "host": "172.16.100.20",
-          "port": "123",
+          "port": "6667",
           "user": "c3p0",
           "channel": "#skylantern-general",
           "message": "Hello there!",
