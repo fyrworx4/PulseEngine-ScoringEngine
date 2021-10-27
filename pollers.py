@@ -243,6 +243,7 @@ def pollIRC(ip, port, username, channel, message):
         while True:
             time.sleep(1)
             resp = irc.recv(2040).decode("UTF-8")
+            print("test")
             if resp.find('PING') != -1:
                 irc.send(bytes('PONG ' + resp.split()[1] + '\r\n', "UTF-8"))
                 print("1st block")
