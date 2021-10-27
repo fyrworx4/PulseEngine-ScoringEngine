@@ -36,7 +36,7 @@
           "type": "ftp",
           "host": "172.16.100.10",
           "port": "21",
-          "users": ["Administrator:iL0v3SkyL@nt3rn", "obiwan:obiwan"],
+          "users": ["Administrator:iL0v3SkyL@nt3rn"],
           "directory": "/ftpshare",
           "file": "Help Us Blue Team, You're Our Only Hope.txt",
           "size": "507",
