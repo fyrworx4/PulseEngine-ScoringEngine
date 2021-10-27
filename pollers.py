@@ -83,7 +83,7 @@ Parameters:
 @size - size of file
 """
 
-def pollFTP(ip, port, users, directory, file, size):
+def pollFTP(ip, port, users):
     try:
         ftp = FTP()
         ftp.connect(ip, int(port))
@@ -93,14 +93,14 @@ def pollFTP(ip, port, users, directory, file, size):
                 continue
             username = user.split(":")[0]
             password = user.split(":")[1]
-        ftp.login(username, password)
-        ftp.cwd(str(directory))
-        filename = str(file)
-        print("FTP")
-        if(ftp.size(filename) == int(size)):
+            ftp.login(username, password)
+        # ftp.cwd(str(directory))
+        # filename = str(file)
+        # print("FTP")
+        # if(ftp.size(filename) == int(size)):
+        #     return True
+            ftp.close()
             return True
-        ftp.close()
-        return False
     except:
         return False
 

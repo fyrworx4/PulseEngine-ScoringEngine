@@ -70,7 +70,7 @@ def runCheck():
                     print("Detailed exception: " + str(e))
             elif scoreObject["type"] == "ftp":
                 try:
-                    result = pollFTP(scoreObject["host"], scoreObject["port"], scoreObject["users"], scoreObject["directory"], scoreObject["file"], scoreObject["size"]) # users must be an array of strings with format username:password
+                    result = pollFTP(scoreObject["host"], scoreObject["port"], scoreObject["users"]) # users must be an array of strings with format username:password
                     scoredServiceObject = {}
                     scoredServiceObject["name"] = scoreObject["displayName"]
                     scoredServiceObject["status"] = result
