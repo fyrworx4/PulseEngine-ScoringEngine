@@ -227,6 +227,7 @@ Parameters:
 @channel - the channel to send messages in 
 @message - the test message to send
 """
+
 def pollIRC(ip, port, username, channel, message):
     try:
         irc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
