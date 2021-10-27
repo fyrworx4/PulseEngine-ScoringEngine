@@ -230,6 +230,7 @@ Parameters:
 """
 
 def pollIRC(ip, port, username, channel, message):
+    print("trying")
     try:
         irc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         irc.connect((ip, port))
