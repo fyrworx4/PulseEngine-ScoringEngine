@@ -39,6 +39,7 @@ Parameters:
 """
 
 def pollHTTP(url, pageHash):
+    url = "http://" + url
     try:
         if(hashlib.md5(requests.get(url, timeout=3).content).hexdigest() == pageHash):
             return True

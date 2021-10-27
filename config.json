@@ -16,6 +16,31 @@
           "port": "22",
           "users": ["criror:iL0v3SkyL@nt3rn"],
           "displayName": "engines-ssh"
+        },
+        {
+          "type": "http",
+          "host": "172.16.100.20:8080",
+          "md5": "477996da20dd5f6558fcfd5ae35cfefd",
+          "displayName": "dockingbay-http"
+        },
+        {
+          "type": "irc",
+          "host": "172.16.100.20",
+          "port": "123",
+          "user": "c3p0",
+          "channel": "#skylantern-general",
+          "message": "Hello there!",
+          "displayName": "dockingbay-irc"
+        },
+        {
+          "type": "ftp",
+          "host": "172.16.100.10",
+          "port": "21",
+          "users": [""],
+          "directory": "/ftpshare",
+          "file": "Help Us Blue Team, You're Our Only Hope.txt",
+          "size": "507",
+          "displayName": "comms-ftp"
         }
       ]
     }
