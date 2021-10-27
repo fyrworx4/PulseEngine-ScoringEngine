@@ -190,7 +190,7 @@ Parameters:
 @tableHash - hash of table
 """
 
-def pollMySQL(ip, port, users, databaseName, tableName, tableHash):
+def pollMySQL(ip, users, databaseName, tableName, tableHash):
     try:
         for user in users:
             if ":" not in user:
@@ -231,11 +231,10 @@ Parameters:
 """
 
 def pollIRC(ip, port, username, channel, message):
-    print("trying")
     try:
         irc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        irc.connect((ip, port))
-        irc.send(bytes("USER " + username + " " + username +" " + username + " :c3p0\n", "UTF-8"))
+        irc.connect((ip, int(port)))
+        irc.send(bytes("USER " + username + " " + username +" " + username + " :bot\n", "UTF-8"))
         irc.send(bytes("NICK " + username + "\n", "UTF-8"))
         irc.send(bytes("NICKSERV IDENTIFY " + "" + " " + "" + "\n", "UTF-8"))
         time.sleep(5)
@@ -253,10 +252,6 @@ def pollIRC(ip, port, username, channel, message):
                 irc.send(bytes("PRIVMSG " + channel + " " + message + "\n", "UTF-8"))
                 return True
 
-        # while True:
-        #     text = irc.get_response()
-        #     print(text)
-        #     irc.send(channel, "Hello!")
-
     except:
+        irc.close()
         return False
