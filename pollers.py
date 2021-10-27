@@ -239,18 +239,24 @@ def pollIRC(ip, port, username, channel, message):
         time.sleep(5)
         irc.send(bytes("JOIN " + channel + "\n", "UTF-8"))
 
-        #while True:
-            #time.sleep(1)
-            #resp = irc.recv(2040).decode("UTF-8")
-            #if resp.find('PING') != -1:
-            #    irc.send(bytes('PONG ' + resp.split()[1] + '\r\n', "UTF-8"))
-            #text = resp
-            #if "PING :" in text:
-            #    irc.send(bytes("PONG :"+text.split('PING')[1].split(':')[1]+"\n","UTF-8"))
-            #if "End of /MOTD" in text:
-            #    irc.send(bytes("PRIVMSG "+channel+" "+message+"\n", "UTF-8"))
-            #    return True
-        irc.send(bytes("PRIVMSG " + channel + " " + message + "\n", "UTF-8"))
+        # while True:
+        #     time.sleep(1)
+        #     resp = irc.recv(2040).decode("UTF-8")
+        #     if resp.find('PING') != -1:
+        #         irc.send(bytes('PONG ' + resp.split()[1] + '\r\n', "UTF-8"))
+        #     text = resp
+        #     if "PING :" in text:
+        #         irc.send(bytes("PONG :"+text.split('PING')[1].split(':')[1]+"\n","UTF-8"))
+        #     if "End of /MOTD" in text:
+        #         irc.send(bytes("PRIVMSG " + channel + " " + message + "\n", "UTF-8"))
+        #         return True
+
+        while True:
+            text = irc.get_response()
+            print(text)
+ 
+            if "PRIVMSG" in text and channel in text:
+                irc.send(channel, "Hello!")
 
     except:
         return False
