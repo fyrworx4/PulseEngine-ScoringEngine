@@ -190,7 +190,7 @@ Parameters:
 @tableHash - hash of table
 """
 
-def pollMySQL(ip, users, databaseName, tableName, tableHash):
+def pollMySQL(ip, users, databaseName, hash):
     try:
         for user in users:
             if ":" not in user:
@@ -206,13 +206,13 @@ def pollMySQL(ip, users, databaseName, tableName, tableHash):
         )
 
         mycursor = mydb.cursor()
-        mycursor.execute("SELECT * FROM " + tableName)
+        mycursor.execute("SHOW TABLES;")
         output = []
         for x in mycursor:
             output.append(x)
         output = str(output).encode("utf-8")
         
-        if(hashlib.md5(output).hexdigest() == tableHash):
+        if(hashlib.md5(output).hexdigest() == hash):
             return True
         else:
             return False
