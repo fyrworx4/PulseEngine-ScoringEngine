@@ -22,4 +22,4 @@ for x in mycursor:
     output.append(x)
 output = str(output).encode("utf-8")
         
-print(hashlib.md5(output).hexdigest() == tableHash)
+print(hashlib.md5(output).hexdigest())
