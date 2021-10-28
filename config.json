@@ -38,6 +38,14 @@
           "port": "21",
           "users": ["Administrator:iL0v3SkyL@nt3rn"],
           "displayName": "comms-ftp"
+        },
+        {
+          "type": "mysql",
+          "host": "",
+          "users": "",
+          "databaseName": "",
+          "tableName": "",
+          "md5": ""
         }
       ]
     }
