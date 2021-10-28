@@ -40,12 +40,25 @@
           "displayName": "comms-ftp"
         },
         {
+          "type": "http",
+          "host": "172.16.100.10/2021/10/27/meesa-favorite-quotes/",
+          "md5": "923ea827bf99a644d8a87f45a112d509",
+          "displayName": "comms-http"
+        },
+        {
           "type": "mysql",
           "host": "",
           "users": "",
           "databaseName": "",
           "tableName": "",
-          "md5": ""
+          "md5": "",
+          "displayName": "bridge-mysql"
+        },
+        {
+          "type": "http",
+          "host": "",
+          "md5": "",
+          "displayName": "bridge-http"
         }
       ]
     }
