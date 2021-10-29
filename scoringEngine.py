@@ -130,7 +130,7 @@ def runCheck():
                     print("Detailed exception: " + str(e))
             elif scoreObject["type"] == "mysql":
                 try:
-                    result = pollMySQL(scoreObject["host"], scoreObject["users"], scoreObject["databaseName"], scoreObject["tableName"], scoreObject["md5"])
+                    result = pollMySQL(scoreObject["host"], scoreObject["username"], scoreObject["password"], scoreObject["databaseName"], scoreObject["tableName"], scoreObject["md5"])
                     scoredServiceObject = {}
                     scoredServiceObject["name"] = scoreObject["displayName"]
                     scoredServiceObject["status"] = result

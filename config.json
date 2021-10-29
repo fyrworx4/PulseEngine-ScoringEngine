@@ -48,7 +48,8 @@
         {
           "type": "mysql",
           "host": "172.16.100.239",
-          "users": "ultimatedeathstarplansuser:b_uLLg5?sSUG!KVFFSac-StXtnNjUrNGbA&FRa^hJ^$V7?nmSRN#f6W4hy9vZnXtA?uvkTF=qVbqZ9mh",
+          "username": "ultimatedeathstarplansuser",
+          "password": "b_uLLg5?sSUG!KVFFSac-StXtnNjUrNGbA&FRa^hJ^$V7?nmSRN#f6W4hy9vZnXtA?uvkTF=qVbqZ9mh",
           "databaseName": "DeathStarPlans",
           "tableName": "plans",
           "md5": "7d80a1e6cca46b61ef9d8675e981f695",

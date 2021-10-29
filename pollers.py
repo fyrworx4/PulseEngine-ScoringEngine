@@ -211,19 +211,8 @@ Parameters:
 @tableHash - hash of table
 """
 
-def pollMySQL(ip, users, databaseName, tableName, tableHash):
+def pollMySQL(ip, username, pw, databaseName, tableName, tableHash):
     try:
-        for user in users:
-            if ":" not in user:
-                continue
-            username = user.split(":")[0]
-            pw = user.split(":")[1]
-
-            print("Username:")
-            print(username)
-            print("Password:")
-            print(pw)
-
         mydb = mysql.connector.connect(
             host = ip,
             user = username,
