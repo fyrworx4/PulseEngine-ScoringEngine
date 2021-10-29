@@ -61,12 +61,9 @@ Parameters:
 def pollHTTPS(url, pageHash):
     url = "https://" + url
     try:
-        print("Trying...")
         if(hashlib.md5(requests.get(url, timeout=3, verify=False).content).hexdigest() == pageHash):
-            print("HTTPS: True")
             return True
         else:
-            print("HTTPS: False")
             return False
     except Exception as e:
         print(e)
@@ -221,6 +218,9 @@ def pollMySQL(ip, users, databaseName, tableName, tableHash):
                 continue
             username = user.split(":")[0]
             pw = user.split(":")[1]
+
+            print(username)
+            print(pw)
 
         mydb = mysql.connector.connect(
             host = ip,
