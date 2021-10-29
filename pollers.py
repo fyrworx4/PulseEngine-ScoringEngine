@@ -248,6 +248,7 @@ Parameters:
 
 def pollIRC(ip, port, username, channel, message):
     try:
+        print("Trying IRC")
         irc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         irc.connect((ip, int(port)))
         irc.send(bytes("USER " + username + " " + username +" " + username + " :bot\n", "UTF-8"))
@@ -255,17 +256,22 @@ def pollIRC(ip, port, username, channel, message):
         irc.send(bytes("NICKSERV IDENTIFY " + "" + " " + "" + "\n", "UTF-8"))
         time.sleep(5)
         irc.send(bytes("JOIN " + channel + "\n", "UTF-8"))
+        print("Logged In")
 
         while True:
             time.sleep(1)
             resp = irc.recv(2040).decode("UTF-8")
+            print("Decoded message")
             if resp.find('PING') != -1:
                 irc.send(bytes('PONG ' + resp.split()[1] + '\r\n', "UTF-8"))
+                print("Sent a pong")
             text = resp
             if "PING :" in text:
                 irc.send(bytes("PONG :"+text.split('PING')[1].split(':')[1]+"\n","UTF-8"))
+                print("Sent a pong 2")
             if "End of /MOTD" in text:
                 irc.send(bytes("PRIVMSG " + channel + " " + message + "\n", "UTF-8"))
+                print("Sent a message")
                 return True
 
     except:
