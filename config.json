@@ -57,7 +57,7 @@
         {
           "type": "https",
           "host": "172.16.100.239:9090",
-          "md5": "",
+          "md5": "f8b7eb45d82013381985cadecdc8fe5b",
           "displayName": "bridge-https"
         }
       ]
