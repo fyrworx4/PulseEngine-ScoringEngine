@@ -255,7 +255,7 @@ def pollIRC(ip, port, username, channel, message):
         irc.send(bytes("NICK " + username + "\n", "UTF-8"))
         irc.send(bytes("NICKSERV IDENTIFY " + "" + " " + "" + "\n", "UTF-8"))
         print("before sleeping")
-        time.sleep(5)
+        time.sleep(10)
         irc.send(bytes("JOIN " + channel + "\n", "UTF-8"))
         print("Logged In")
 
