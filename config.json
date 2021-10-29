@@ -50,7 +50,7 @@
           "host": "172.16.100.239",
           "users": "ultimatedeathstarplansuser:b_uLLg5?sSUG!KVFFSac-StXtnNjUrNGbA&FRa^hJ^$V7?nmSRN#f6W4hy9vZnXtA?uvkTF=qVbqZ9mh",
           "databaseName": "DeathStarPlans",
-          "tableName": "",
+          "tableName": "plans",
           "md5": "",
           "displayName": "bridge-mysql"
         },
