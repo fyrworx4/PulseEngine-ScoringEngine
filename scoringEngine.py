@@ -70,7 +70,7 @@ def runCheck():
                     print("Detailed exception: " + str(e))
             elif scoreObject["type"] == "https":
                 try:
-                    result = pollHTTP(scoreObject["host"], scoreObject["md5"])
+                    result = pollHTTPS(scoreObject["host"], scoreObject["md5"])
                     scoredServiceObject = {}
                     scoredServiceObject["name"] = scoreObject["displayName"]
                     scoredServiceObject["status"] = result
