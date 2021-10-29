@@ -68,6 +68,16 @@ def runCheck():
                 except Exception as e:
                     print("[!] HTTP poll failed, likely fault in parameters")
                     print("Detailed exception: " + str(e))
+            elif scoreObject["type"] == "https":
+                try:
+                    result = pollHTTP(scoreObject["host"], scoreObject["md5"])
+                    scoredServiceObject = {}
+                    scoredServiceObject["name"] = scoreObject["displayName"]
+                    scoredServiceObject["status"] = result
+                    teamServices.append(scoredServiceObject)
+                except Exception as e:
+                    print("[!] HTTP poll failed, likely fault in parameters")
+                    print("Detailed exception: " + str(e))
             elif scoreObject["type"] == "ftp":
                 try:
                     result = pollFTP(scoreObject["host"], scoreObject["port"], scoreObject["users"]) # users must be an array of strings with format username:password
