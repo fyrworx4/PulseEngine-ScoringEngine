@@ -1,0 +1,67 @@
+{
+  "compId": "dd5079e2-9b49-42c2-9f71-3ad7a3806629",
+  "apikey": "3505f3cc-c632-407b-8d72-f9f47a3302a5",
+  "teams": [
+    {
+      "teamname": "Team 00",
+      "scoredObjects": [
+        {
+          "type": "dns",
+          "host": "172.16.100.235",
+          "displayName": "engines-dns"
+        },
+        {
+          "type": "ssh",
+          "host": "172.16.100.235",
+          "port": "22",
+          "users": ["criror:iL0v3SkyL@nt3rn"],
+          "displayName": "engines-ssh"
+        },
+        {
+          "type": "http",
+          "host": "172.16.100.20:8080",
+          "md5": "477996da20dd5f6558fcfd5ae35cfefd",
+          "displayName": "dockingbay-http"
+        },
+        {
+          "type": "irc",
+          "host": "172.16.100.20",
+          "port": "6667",
+          "user": "c3p0",
+          "channel": "#skylantern-general",
+          "message": "Hello there!",
+          "displayName": "dockingbay-irc"
+        },
+        {
+          "type": "ftp",
+          "host": "172.16.100.10",
+          "port": "21",
+          "users": ["Administrator:iL0v3SkyL@nt3rn"],
+          "displayName": "comms-ftp"
+        },
+        {
+          "type": "http",
+          "host": "172.16.100.10/2021/10/27/meesa-favorite-quotes/",
+          "md5": "923ea827bf99a644d8a87f45a112d509",
+          "displayName": "comms-http"
+        },
+        {
+          "type": "mysql",
+          "host": "172.16.100.239",
+          "username": "ultimatedeathstarplansuser",
+          "password": "b_uLLg5?sSUG!KVFFSac-StXtnNjUrNGbA&FRa^hJ^$V7?nmSRN#f6W4hy9vZnXtA?uvkTF=qVbqZ9mh",
+          "databaseName": "DeathStarPlans",
+          "tableName": "plans",
+          "md5": "7d80a1e6cca46b61ef9d8675e981f695",
+          "displayName": "bridge-mysql"
+        },
+        {
+          "type": "https",
+          "host": "172.16.100.239:9090",
+          "md5": "f8b7eb45d82013381985cadecdc8fe5b",
+          "displayName": "bridge-https"
+        }
+      ]
+    }
+  ]
+}

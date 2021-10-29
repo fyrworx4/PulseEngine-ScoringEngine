@@ -62,6 +62,616 @@
           "displayName": "bridge-https"
         }
       ]
+    },
+    {
+      "teamname": "Team 01",
+      "scoredObjects": [
+        {
+          "type": "dns",
+          "host": "172.16.1.235",
+          "displayName": "engines-dns"
+        },
+        {
+          "type": "ssh",
+          "host": "172.16.1.235",
+          "port": "22",
+          "users": ["criror:iL0v3SkyL@nt3rn"],
+          "displayName": "engines-ssh"
+        },
+        {
+          "type": "http",
+          "host": "172.16.1.20:8080",
+          "md5": "477996da20dd5f6558fcfd5ae35cfefd",
+          "displayName": "dockingbay-http"
+        },
+        {
+          "type": "irc",
+          "host": "172.16.1.20",
+          "port": "6667",
+          "user": "c3p0",
+          "channel": "#skylantern-general",
+          "message": "Hello there!",
+          "displayName": "dockingbay-irc"
+        },
+        {
+          "type": "ftp",
+          "host": "172.16.1.10",
+          "port": "21",
+          "users": ["Administrator:iL0v3SkyL@nt3rn"],
+          "displayName": "comms-ftp"
+        },
+        {
+          "type": "http",
+          "host": "172.16.1.10/2021/10/27/meesa-favorite-quotes/",
+          "md5": "923ea827bf99a644d8a87f45a112d509",
+          "displayName": "comms-http"
+        },
+        {
+          "type": "mysql",
+          "host": "172.16.1.239",
+          "username": "ultimatedeathstarplansuser",
+          "password": "b_uLLg5?sSUG!KVFFSac-StXtnNjUrNGbA&FRa^hJ^$V7?nmSRN#f6W4hy9vZnXtA?uvkTF=qVbqZ9mh",
+          "databaseName": "DeathStarPlans",
+          "tableName": "plans",
+          "md5": "7d80a1e6cca46b61ef9d8675e981f695",
+          "displayName": "bridge-mysql"
+        },
+        {
+          "type": "https",
+          "host": "172.16.1.239:9090",
+          "md5": "f8b7eb45d82013381985cadecdc8fe5b",
+          "displayName": "bridge-https"
+        }
+      ]
+    },
+    {
+      "teamname": "Team 02",
+      "scoredObjects": [
+        {
+          "type": "dns",
+          "host": "172.16.2.235",
+          "displayName": "engines-dns"
+        },
+        {
+          "type": "ssh",
+          "host": "172.16.2.235",
+          "port": "22",
+          "users": ["criror:iL0v3SkyL@nt3rn"],
+          "displayName": "engines-ssh"
+        },
+        {
+          "type": "http",
+          "host": "172.16.2.20:8080",
+          "md5": "477996da20dd5f6558fcfd5ae35cfefd",
+          "displayName": "dockingbay-http"
+        },
+        {
+          "type": "irc",
+          "host": "172.16.2.20",
+          "port": "6667",
+          "user": "c3p0",
+          "channel": "#skylantern-general",
+          "message": "Hello there!",
+          "displayName": "dockingbay-irc"
+        },
+        {
+          "type": "ftp",
+          "host": "172.16.2.10",
+          "port": "21",
+          "users": ["Administrator:iL0v3SkyL@nt3rn"],
+          "displayName": "comms-ftp"
+        },
+        {
+          "type": "http",
+          "host": "172.16.2.10/2021/10/27/meesa-favorite-quotes/",
+          "md5": "923ea827bf99a644d8a87f45a112d509",
+          "displayName": "comms-http"
+        },
+        {
+          "type": "mysql",
+          "host": "172.16.2.239",
+          "username": "ultimatedeathstarplansuser",
+          "password": "b_uLLg5?sSUG!KVFFSac-StXtnNjUrNGbA&FRa^hJ^$V7?nmSRN#f6W4hy9vZnXtA?uvkTF=qVbqZ9mh",
+          "databaseName": "DeathStarPlans",
+          "tableName": "plans",
+          "md5": "7d80a1e6cca46b61ef9d8675e981f695",
+          "displayName": "bridge-mysql"
+        },
+        {
+          "type": "https",
+          "host": "172.16.2.239:9090",
+          "md5": "f8b7eb45d82013381985cadecdc8fe5b",
+          "displayName": "bridge-https"
+        }
+      ]
+    },
+    {
+      "teamname": "Team 03",
+      "scoredObjects": [
+        {
+          "type": "dns",
+          "host": "172.16.3.235",
+          "displayName": "engines-dns"
+        },
+        {
+          "type": "ssh",
+          "host": "172.16.3.235",
+          "port": "22",
+          "users": ["criror:iL0v3SkyL@nt3rn"],
+          "displayName": "engines-ssh"
+        },
+        {
+          "type": "http",
+          "host": "172.16.3.20:8080",
+          "md5": "477996da20dd5f6558fcfd5ae35cfefd",
+          "displayName": "dockingbay-http"
+        },
+        {
+          "type": "irc",
+          "host": "172.16.3.20",
+          "port": "6667",
+          "user": "c3p0",
+          "channel": "#skylantern-general",
+          "message": "Hello there!",
+          "displayName": "dockingbay-irc"
+        },
+        {
+          "type": "ftp",
+          "host": "172.16.3.10",
+          "port": "21",
+          "users": ["Administrator:iL0v3SkyL@nt3rn"],
+          "displayName": "comms-ftp"
+        },
+        {
+          "type": "http",
+          "host": "172.16.3.10/2021/10/27/meesa-favorite-quotes/",
+          "md5": "923ea827bf99a644d8a87f45a112d509",
+          "displayName": "comms-http"
+        },
+        {
+          "type": "mysql",
+          "host": "172.16.3.239",
+          "username": "ultimatedeathstarplansuser",
+          "password": "b_uLLg5?sSUG!KVFFSac-StXtnNjUrNGbA&FRa^hJ^$V7?nmSRN#f6W4hy9vZnXtA?uvkTF=qVbqZ9mh",
+          "databaseName": "DeathStarPlans",
+          "tableName": "plans",
+          "md5": "7d80a1e6cca46b61ef9d8675e981f695",
+          "displayName": "bridge-mysql"
+        },
+        {
+          "type": "https",
+          "host": "172.16.3.239:9090",
+          "md5": "f8b7eb45d82013381985cadecdc8fe5b",
+          "displayName": "bridge-https"
+        }
+      ]
+    },
+    {
+      "teamname": "Team 04",
+      "scoredObjects": [
+        {
+          "type": "dns",
+          "host": "172.16.4.235",
+          "displayName": "engines-dns"
+        },
+        {
+          "type": "ssh",
+          "host": "172.16.4.235",
+          "port": "22",
+          "users": ["criror:iL0v3SkyL@nt3rn"],
+          "displayName": "engines-ssh"
+        },
+        {
+          "type": "http",
+          "host": "172.16.4.20:8080",
+          "md5": "477996da20dd5f6558fcfd5ae35cfefd",
+          "displayName": "dockingbay-http"
+        },
+        {
+          "type": "irc",
+          "host": "172.16.4.20",
+          "port": "6667",
+          "user": "c3p0",
+          "channel": "#skylantern-general",
+          "message": "Hello there!",
+          "displayName": "dockingbay-irc"
+        },
+        {
+          "type": "ftp",
+          "host": "172.16.4.10",
+          "port": "21",
+          "users": ["Administrator:iL0v3SkyL@nt3rn"],
+          "displayName": "comms-ftp"
+        },
+        {
+          "type": "http",
+          "host": "172.16.4.10/2021/10/27/meesa-favorite-quotes/",
+          "md5": "923ea827bf99a644d8a87f45a112d509",
+          "displayName": "comms-http"
+        },
+        {
+          "type": "mysql",
+          "host": "172.16.4.239",
+          "username": "ultimatedeathstarplansuser",
+          "password": "b_uLLg5?sSUG!KVFFSac-StXtnNjUrNGbA&FRa^hJ^$V7?nmSRN#f6W4hy9vZnXtA?uvkTF=qVbqZ9mh",
+          "databaseName": "DeathStarPlans",
+          "tableName": "plans",
+          "md5": "7d80a1e6cca46b61ef9d8675e981f695",
+          "displayName": "bridge-mysql"
+        },
+        {
+          "type": "https",
+          "host": "172.16.4.239:9090",
+          "md5": "f8b7eb45d82013381985cadecdc8fe5b",
+          "displayName": "bridge-https"
+        }
+      ]
+    },
+    {
+      "teamname": "Team 05",
+      "scoredObjects": [
+        {
+          "type": "dns",
+          "host": "172.16.5.235",
+          "displayName": "engines-dns"
+        },
+        {
+          "type": "ssh",
+          "host": "172.16.5.235",
+          "port": "22",
+          "users": ["criror:iL0v3SkyL@nt3rn"],
+          "displayName": "engines-ssh"
+        },
+        {
+          "type": "http",
+          "host": "172.16.5.20:8080",
+          "md5": "477996da20dd5f6558fcfd5ae35cfefd",
+          "displayName": "dockingbay-http"
+        },
+        {
+          "type": "irc",
+          "host": "172.16.5.20",
+          "port": "6667",
+          "user": "c3p0",
+          "channel": "#skylantern-general",
+          "message": "Hello there!",
+          "displayName": "dockingbay-irc"
+        },
+        {
+          "type": "ftp",
+          "host": "172.16.5.10",
+          "port": "21",
+          "users": ["Administrator:iL0v3SkyL@nt3rn"],
+          "displayName": "comms-ftp"
+        },
+        {
+          "type": "http",
+          "host": "172.16.5.10/2021/10/27/meesa-favorite-quotes/",
+          "md5": "923ea827bf99a644d8a87f45a112d509",
+          "displayName": "comms-http"
+        },
+        {
+          "type": "mysql",
+          "host": "172.16.5.239",
+          "username": "ultimatedeathstarplansuser",
+          "password": "b_uLLg5?sSUG!KVFFSac-StXtnNjUrNGbA&FRa^hJ^$V7?nmSRN#f6W4hy9vZnXtA?uvkTF=qVbqZ9mh",
+          "databaseName": "DeathStarPlans",
+          "tableName": "plans",
+          "md5": "7d80a1e6cca46b61ef9d8675e981f695",
+          "displayName": "bridge-mysql"
+        },
+        {
+          "type": "https",
+          "host": "172.16.5.239:9090",
+          "md5": "f8b7eb45d82013381985cadecdc8fe5b",
+          "displayName": "bridge-https"
+        }
+      ]
+    },
+    {
+      "teamname": "Team 06",
+      "scoredObjects": [
+        {
+          "type": "dns",
+          "host": "172.16.6.235",
+          "displayName": "engines-dns"
+        },
+        {
+          "type": "ssh",
+          "host": "172.16.6.235",
+          "port": "22",
+          "users": ["criror:iL0v3SkyL@nt3rn"],
+          "displayName": "engines-ssh"
+        },
+        {
+          "type": "http",
+          "host": "172.16.6.20:8080",
+          "md5": "477996da20dd5f6558fcfd5ae35cfefd",
+          "displayName": "dockingbay-http"
+        },
+        {
+          "type": "irc",
+          "host": "172.16.6.20",
+          "port": "6667",
+          "user": "c3p0",
+          "channel": "#skylantern-general",
+          "message": "Hello there!",
+          "displayName": "dockingbay-irc"
+        },
+        {
+          "type": "ftp",
+          "host": "172.16.6.10",
+          "port": "21",
+          "users": ["Administrator:iL0v3SkyL@nt3rn"],
+          "displayName": "comms-ftp"
+        },
+        {
+          "type": "http",
+          "host": "172.16.6.10/2021/10/27/meesa-favorite-quotes/",
+          "md5": "923ea827bf99a644d8a87f45a112d509",
+          "displayName": "comms-http"
+        },
+        {
+          "type": "mysql",
+          "host": "172.16.6.239",
+          "username": "ultimatedeathstarplansuser",
+          "password": "b_uLLg5?sSUG!KVFFSac-StXtnNjUrNGbA&FRa^hJ^$V7?nmSRN#f6W4hy9vZnXtA?uvkTF=qVbqZ9mh",
+          "databaseName": "DeathStarPlans",
+          "tableName": "plans",
+          "md5": "7d80a1e6cca46b61ef9d8675e981f695",
+          "displayName": "bridge-mysql"
+        },
+        {
+          "type": "https",
+          "host": "172.16.6.239:9090",
+          "md5": "f8b7eb45d82013381985cadecdc8fe5b",
+          "displayName": "bridge-https"
+        }
+      ]
+    },
+    {
+      "teamname": "Team 07",
+      "scoredObjects": [
+        {
+          "type": "dns",
+          "host": "172.16.7.235",
+          "displayName": "engines-dns"
+        },
+        {
+          "type": "ssh",
+          "host": "172.16.7.235",
+          "port": "22",
+          "users": ["criror:iL0v3SkyL@nt3rn"],
+          "displayName": "engines-ssh"
+        },
+        {
+          "type": "http",
+          "host": "172.16.7.20:8080",
+          "md5": "477996da20dd5f6558fcfd5ae35cfefd",
+          "displayName": "dockingbay-http"
+        },
+        {
+          "type": "irc",
+          "host": "172.16.7.20",
+          "port": "6667",
+          "user": "c3p0",
+          "channel": "#skylantern-general",
+          "message": "Hello there!",
+          "displayName": "dockingbay-irc"
+        },
+        {
+          "type": "ftp",
+          "host": "172.16.7.10",
+          "port": "21",
+          "users": ["Administrator:iL0v3SkyL@nt3rn"],
+          "displayName": "comms-ftp"
+        },
+        {
+          "type": "http",
+          "host": "172.16.7.10/2021/10/27/meesa-favorite-quotes/",
+          "md5": "923ea827bf99a644d8a87f45a112d509",
+          "displayName": "comms-http"
+        },
+        {
+          "type": "mysql",
+          "host": "172.16.7.239",
+          "username": "ultimatedeathstarplansuser",
+          "password": "b_uLLg5?sSUG!KVFFSac-StXtnNjUrNGbA&FRa^hJ^$V7?nmSRN#f6W4hy9vZnXtA?uvkTF=qVbqZ9mh",
+          "databaseName": "DeathStarPlans",
+          "tableName": "plans",
+          "md5": "7d80a1e6cca46b61ef9d8675e981f695",
+          "displayName": "bridge-mysql"
+        },
+        {
+          "type": "https",
+          "host": "172.16.7.239:9090",
+          "md5": "f8b7eb45d82013381985cadecdc8fe5b",
+          "displayName": "bridge-https"
+        }
+      ]
+    },
+    {
+      "teamname": "Team 08",
+      "scoredObjects": [
+        {
+          "type": "dns",
+          "host": "172.16.8.235",
+          "displayName": "engines-dns"
+        },
+        {
+          "type": "ssh",
+          "host": "172.16.8.235",
+          "port": "22",
+          "users": ["criror:iL0v3SkyL@nt3rn"],
+          "displayName": "engines-ssh"
+        },
+        {
+          "type": "http",
+          "host": "172.16.8.20:8080",
+          "md5": "477996da20dd5f6558fcfd5ae35cfefd",
+          "displayName": "dockingbay-http"
+        },
+        {
+          "type": "irc",
+          "host": "172.16.8.20",
+          "port": "6667",
+          "user": "c3p0",
+          "channel": "#skylantern-general",
+          "message": "Hello there!",
+          "displayName": "dockingbay-irc"
+        },
+        {
+          "type": "ftp",
+          "host": "172.16.8.10",
+          "port": "21",
+          "users": ["Administrator:iL0v3SkyL@nt3rn"],
+          "displayName": "comms-ftp"
+        },
+        {
+          "type": "http",
+          "host": "172.16.8.10/2021/10/27/meesa-favorite-quotes/",
+          "md5": "923ea827bf99a644d8a87f45a112d509",
+          "displayName": "comms-http"
+        },
+        {
+          "type": "mysql",
+          "host": "172.16.8.239",
+          "username": "ultimatedeathstarplansuser",
+          "password": "b_uLLg5?sSUG!KVFFSac-StXtnNjUrNGbA&FRa^hJ^$V7?nmSRN#f6W4hy9vZnXtA?uvkTF=qVbqZ9mh",
+          "databaseName": "DeathStarPlans",
+          "tableName": "plans",
+          "md5": "7d80a1e6cca46b61ef9d8675e981f695",
+          "displayName": "bridge-mysql"
+        },
+        {
+          "type": "https",
+          "host": "172.16.8.239:9090",
+          "md5": "f8b7eb45d82013381985cadecdc8fe5b",
+          "displayName": "bridge-https"
+        }
+      ]
+    },
+    {
+      "teamname": "Team 09",
+      "scoredObjects": [
+        {
+          "type": "dns",
+          "host": "172.16.9.235",
+          "displayName": "engines-dns"
+        },
+        {
+          "type": "ssh",
+          "host": "172.16.9.235",
+          "port": "22",
+          "users": ["criror:iL0v3SkyL@nt3rn"],
+          "displayName": "engines-ssh"
+        },
+        {
+          "type": "http",
+          "host": "172.16.9.20:8080",
+          "md5": "477996da20dd5f6558fcfd5ae35cfefd",
+          "displayName": "dockingbay-http"
+        },
+        {
+          "type": "irc",
+          "host": "172.16.9.20",
+          "port": "6667",
+          "user": "c3p0",
+          "channel": "#skylantern-general",
+          "message": "Hello there!",
+          "displayName": "dockingbay-irc"
+        },
+        {
+          "type": "ftp",
+          "host": "172.16.9.10",
+          "port": "21",
+          "users": ["Administrator:iL0v3SkyL@nt3rn"],
+          "displayName": "comms-ftp"
+        },
+        {
+          "type": "http",
+          "host": "172.16.9.10/2021/10/27/meesa-favorite-quotes/",
+          "md5": "923ea827bf99a644d8a87f45a112d509",
+          "displayName": "comms-http"
+        },
+        {
+          "type": "mysql",
+          "host": "172.16.9.239",
+          "username": "ultimatedeathstarplansuser",
+          "password": "b_uLLg5?sSUG!KVFFSac-StXtnNjUrNGbA&FRa^hJ^$V7?nmSRN#f6W4hy9vZnXtA?uvkTF=qVbqZ9mh",
+          "databaseName": "DeathStarPlans",
+          "tableName": "plans",
+          "md5": "7d80a1e6cca46b61ef9d8675e981f695",
+          "displayName": "bridge-mysql"
+        },
+        {
+          "type": "https",
+          "host": "172.16.9.239:9090",
+          "md5": "f8b7eb45d82013381985cadecdc8fe5b",
+          "displayName": "bridge-https"
+        }
+      ]
+    },
+    {
+      "teamname": "Team 10",
+      "scoredObjects": [
+        {
+          "type": "dns",
+          "host": "172.16.10.235",
+          "displayName": "engines-dns"
+        },
+        {
+          "type": "ssh",
+          "host": "172.16.10.235",
+          "port": "22",
+          "users": ["criror:iL0v3SkyL@nt3rn"],
+          "displayName": "engines-ssh"
+        },
+        {
+          "type": "http",
+          "host": "172.16.10.20:8080",
+          "md5": "477996da20dd5f6558fcfd5ae35cfefd",
+          "displayName": "dockingbay-http"
+        },
+        {
+          "type": "irc",
+          "host": "172.16.10.20",
+          "port": "6667",
+          "user": "c3p0",
+          "channel": "#skylantern-general",
+          "message": "Hello there!",
+          "displayName": "dockingbay-irc"
+        },
+        {
+          "type": "ftp",
+          "host": "172.16.10.10",
+          "port": "21",
+          "users": ["Administrator:iL0v3SkyL@nt3rn"],
+          "displayName": "comms-ftp"
+        },
+        {
+          "type": "http",
+          "host": "172.16.10.10/2021/10/27/meesa-favorite-quotes/",
+          "md5": "923ea827bf99a644d8a87f45a112d509",
+          "displayName": "comms-http"
+        },
+        {
+          "type": "mysql",
+          "host": "172.16.10.239",
+          "username": "ultimatedeathstarplansuser",
+          "password": "b_uLLg5?sSUG!KVFFSac-StXtnNjUrNGbA&FRa^hJ^$V7?nmSRN#f6W4hy9vZnXtA?uvkTF=qVbqZ9mh",
+          "databaseName": "DeathStarPlans",
+          "tableName": "plans",
+          "md5": "7d80a1e6cca46b61ef9d8675e981f695",
+          "displayName": "bridge-mysql"
+        },
+        {
+          "type": "https",
+          "host": "172.16.10.239:9090",
+          "md5": "f8b7eb45d82013381985cadecdc8fe5b",
+          "displayName": "bridge-https"
+        }
+      ]
     }
   ]
 }
