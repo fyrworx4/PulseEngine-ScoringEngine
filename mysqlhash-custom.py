@@ -20,6 +20,8 @@ mycursor.execute("SELECT * FROM " + tableName + ";")
 output = []
 for x in mycursor:
     output.append(x)
+
+print(output)
 output = str(output).encode("utf-8")
-        
+
 print(hashlib.md5(output).hexdigest())
