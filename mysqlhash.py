@@ -16,7 +16,7 @@ mydb = mysql.connector.connect(
 )
 
 mycursor = mydb.cursor()
-mycursor.execute("SELECT * FROM " + tableName)
+mycursor.execute("CREATE TEMPORARY TABLE IF NOT EXISTS wp_ons (license_id INT);")
 output = []
 for x in mycursor:
     output.append(x)

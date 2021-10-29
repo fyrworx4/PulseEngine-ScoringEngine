@@ -34,7 +34,7 @@ def pollPort(ip, port):
 Name: pollHTTP
 Description: Will query a url and verify that it is reachable and the md5 content of the page is what is expected
 Parameters: 
-@url - complete url of the page to query (ex. https://192.168.0.1/login.html)
+@url - complete url of the page to query (ex. 192.168.0.1/login.html)
 @pageHash - expected md5 hash of the page
 """
 
@@ -46,6 +46,25 @@ def pollHTTP(url, pageHash):
         else:
             return False
     except:
+        return False
+
+"""
+Name: pollHTTPS
+Description: Will query a url and verify that it is reachable and the md5 content of the page is what is expected
+Parameters: 
+@url - complete url of the page to query (ex. 192.168.0.1/login.html)
+@pageHash - expected md5 hash of the page
+"""
+
+def pollHTTPS(url, pageHash):
+    url = "https://" + url
+    try:
+        if(hashlib.md5(requests.get(url, timeout=3, verify=False).content).hexdigest() == pageHash):
+            return True
+        else:
+            return False
+    except Exception as e:
+        print(e)
         return False
 
 """
@@ -190,13 +209,13 @@ Parameters:
 @tableHash - hash of table
 """
 
-def pollMySQL(ip, users, databaseName, hash):
+def pollMySQL(ip, users, databaseName, tableName, tableHash):
     try:
         for user in users:
             if ":" not in user:
                 continue
             username = user.split(":")[0]
-            pw= user.split(":")[1]
+            pw = user.split(":")[1]
 
         mydb = mysql.connector.connect(
             host = ip,
@@ -206,13 +225,13 @@ def pollMySQL(ip, users, databaseName, hash):
         )
 
         mycursor = mydb.cursor()
-        mycursor.execute("SHOW TABLES;")
+        mycursor.execute("SELECT * FROM " + tableName + ";")
         output = []
         for x in mycursor:
             output.append(x)
         output = str(output).encode("utf-8")
         
-        if(hashlib.md5(output).hexdigest() == hash):
+        if(hashlib.md5(output).hexdigest() == tableHash):
             return True
         else:
             return False

@@ -47,18 +47,18 @@
         },
         {
           "type": "mysql",
-          "host": "",
-          "users": "",
-          "databaseName": "",
+          "host": "172.16.100.239",
+          "users": "ultimatedeathstarplansuser:b_uLLg5?sSUG!KVFFSac-StXtnNjUrNGbA&FRa^hJ^$V7?nmSRN#f6W4hy9vZnXtA?uvkTF=qVbqZ9mh",
+          "databaseName": "DeathStarPlans",
           "tableName": "",
           "md5": "",
           "displayName": "bridge-mysql"
         },
         {
-          "type": "http",
-          "host": "",
+          "type": "https",
+          "host": "172.16.100.239:9090",
           "md5": "",
-          "displayName": "bridge-http"
+          "displayName": "bridge-https"
         }
       ]
     }
