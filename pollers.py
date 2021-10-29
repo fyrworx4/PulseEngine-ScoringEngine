@@ -205,7 +205,8 @@ Description: Will verify that the mySQL service is running on the specific port 
 Parameters: 
 @ip - ip address to poll 
 @port - port number to poll 
-@users - list of users to connect with 
+@username - user to connect with 
+@password - password
 @databaseName - name of database to use 
 @tableName - name of table to use 
 @tableHash - hash of table
