@@ -1,6 +1,8 @@
 import sys
 import hashlib
 import requests
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 option = sys.argv[1]
 site = sys.argv[2]

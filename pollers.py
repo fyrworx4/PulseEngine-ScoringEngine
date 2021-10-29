@@ -12,6 +12,8 @@ import smtplib
 import re
 import mysql.connector
 import time
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 """
 Name: pollPort
