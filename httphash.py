@@ -6,6 +6,6 @@ option = sys.argv[1]
 site = sys.argv[2]
 
 if option == "-https":
-    print(hashlib.md5(requests.get(url, timeout=3, verify=False).content).hexdigest())
+    print(hashlib.md5(requests.get(site, timeout=3, verify=False).content).hexdigest())
 if option == "-http":
     print(hashlib.md5(requests.get(site, timeout=3).content).hexdigest())
