@@ -219,7 +219,9 @@ def pollMySQL(ip, users, databaseName, tableName, tableHash):
             username = user.split(":")[0]
             pw = user.split(":")[1]
 
+            print("Username:")
             print(username)
+            print("Password:")
             print(pw)
 
         mydb = mysql.connector.connect(
